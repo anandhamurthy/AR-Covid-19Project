@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arcovid19project">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MedicalStoresActivity"
+            android:label="Map"/>
+
+        <activity
+            android:name=".ShowMapActivity"
+            android:label="Map" />
+        <activity
+            android:name=".Login.SplashActivity"
+            android:theme="@style/OthersAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrphanageSupportActivity" />
+        <activity
+            android:name=".OrphanageSupport.FreeFoodActivity"
+            android:label="Free Food"
+            android:theme="@style/MainTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VolunteersActivity"
+            android:label="Volunteers &amp; Donors"
+            android:theme="@style/MainTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HospitalAdmissionActivity"
+            android:label="Hospital Admissions"
+            android:theme="@style/MainTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DonateMaterialsActivity"
+            android:label="Donate Materials"
+            android:theme="@style/MainTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DonateFundsActivity" />
+        <activity
+            android:name=".OnlineDoctorsActivity"
+            android:label="Online Doctors"
+            android:theme="@style/MainTheme">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login.LoginActivity"
+            android:theme="@style/OthersAppTheme" />
+        <activity
+            android:name=".Login.VerifyActivity"
+            android:theme="@style/OthersAppTheme" />
+        <activity android:name=".Login.ProfileActivity" />
+        <activity
+            android:name=".OrphanageSupport.DeliveryActivity"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".OrphanageSupport.HomesActivity"
+            android:theme="@style/MainTheme" />
+        <activity android:name=".TweetsActivity" />
+        <activity android:name=".FAQsActivity" />
+        <activity android:name=".TestLabsActivity" />
+        <activity android:name=".HomeTreatmentActivity" />
+        <activity android:name=".CoronaStatusActivity" />
+        <activity android:name=".MyHealthStatusActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ConfirmActivity" />
+        <activity android:name=".EssentialCommoditiesActivity" />
+        <activity android:name=".WebViewActivity" />
+        <activity android:name=".ImageDetailedActivity" />
+        <activity android:name=".HealthCaresActivity"/>
+        <activity android:name=".OfficialDirectoriesActivity" />
+        <activity android:name=".GovernmentOrdersActivity" />
+    </application>
+
+</manifest>
